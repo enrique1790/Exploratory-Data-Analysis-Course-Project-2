@@ -27,7 +27,7 @@ g <- g + geom_bar(stat="identity")  +
   ggtitle('Total Emissions from Motor Vehicle Sources in Baltimore VS LA, 1999-2008')
 print(g)
 
-png("plot6.png", width=1040, height=480)
+dev.copy(png, file="plot6.png", width=480, height=480)
 dev.off()
 
 # Data seems to indicates a downward trend in motor vehicle emissions in Baltimore City 

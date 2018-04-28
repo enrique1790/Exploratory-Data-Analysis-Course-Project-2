@@ -19,7 +19,7 @@ barplot(height=AggregatedTotalByYear$Emissions, names.arg=AggregatedTotalByYear$
         xlab="years", ylab=expression('total PM'[2.5]*' emission'),
         main=expression('Total PM'[2.5]*' in the Baltimore City, MD emissions at various years'))
 
-png('plot2.png')
+dev.copy(png, file="plot2.png", width=480, height=480)
 dev.off()
 
 # not a consistant downtrend data showed a spike in emissions around 2005.

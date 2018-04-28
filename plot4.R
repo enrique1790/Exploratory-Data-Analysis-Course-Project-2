@@ -29,7 +29,6 @@ g <- g + geom_bar(stat="identity") +
   ggtitle('Total Emissions from coal sources from 1999 to 2008')
 print(g)
 
-png("plot4.png", width=640, height=480)
+dev.copy(png, file="plot4.png", width=480, height=480)
 dev.off()
-
 #emissions from coal combustion-relates sources havee decrease especially from 2005 to 2008.

@@ -24,7 +24,7 @@ g <- g + geom_line() + geom_point() + xlab("year") +
   ggtitle("Total Emissions in Baltimore City")
 print(g)
 
-png("plot3.png", width=640, height=480)
+dev.copy(png, file="plot3.png", width=480, height=480)
 dev.off()
 
 # from 1999 t0 2008 point sources have seen an increase, while on-road, non-road, and non-point sources have all seen decreases in PM2.5 emissions

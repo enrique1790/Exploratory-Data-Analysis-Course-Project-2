@@ -24,7 +24,7 @@ g <- g + geom_bar(stat="identity") +
   ggtitle('Emissions in Baltimore City from Motor Vehicles from 1999 to 2008')
 print(g)
 
-png("plot5.png", width=840, height=480)
+dev.copy(png, file="plot5.png", width=480, height=480)
 dev.off()
 
 # Emissions from motor vehicles have declined from 1999-2008 in Baltimore City.

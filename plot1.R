@@ -31,8 +31,7 @@ barplot(height=aggregatedTotalByYear$Emissions, names.arg=aggregatedTotalByYear$
         main=expression('Total PM'[2.5]*' emissions at various years'))
 
 
-png('plot1.png')
+dev.copy(png, file="plot1.png", width=480, height=480)
 dev.off()
-
 # total emissions from PM2.5 decreased in the United States from 1999 to 2008.
 
